@@ -1,0 +1,16 @@
+PHONE NOTIFICATION SETUP
+
+1. Install the free "ntfy" app on the phone.
+2. Open the Streamlit app > Profile > Notifications.
+3. Tap "Generate a private notification topic".
+4. Copy the generated topic and subscribe to that exact topic in the ntfy phone app.
+5. Turn on "Enable phone push notifications" in the Streamlit app and save.
+6. Tap "Send test phone notification". A notification should appear on the phone.
+
+The Streamlit app can send notifications while it is running.
+For reminders to arrive automatically when nobody has the app open, run notifier.py hourly on an always-on scheduler/host. It uses the same carer_data.json and will not send the same shift reminder twice.
+
+Default shift-day reminder:
+"You have a shift today 🌙 Your shift starts at 8:00 PM at Earlswood. Don’t forget your water and apple juice so you stay hydrated. 💧🍎"
+
+You can edit both the reminder time and message in Profile > Notifications.
